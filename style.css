@@ -1,7 +1,30 @@
-*,body,html {
+*, body, html {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-size: 62.5%;
 }
 
 body {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    color:darkslateblue
+}
+
+.head {
+
+}
+
+.card {
+
+}
+
+h2 {
     
+}
+
+.sample {
+    font-size: 2rem;
+    border: 1px solid aqua;
+    display: flex;
 }
