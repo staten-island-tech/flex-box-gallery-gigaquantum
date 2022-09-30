@@ -14,7 +14,8 @@ body {
 }
 
 .head {
-
+    text-align: center;
+    font-size: 10rem;
 }
 
 .content-bin {
@@ -22,6 +23,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    flex-grow: 1rem;
 }
 
 .card {
@@ -29,20 +31,31 @@ body {
     color: antiquewhite;
     text-align: center;
     width: 30%;
-    border-radius: 3vh;
+    border-radius: 30px;
     padding: 1rem;
+    margin: 1.5rem;
+    box-shadow: 10px 10px 10px rgb(54, 66, 66);
+    
 }
 
-h2 {
+.card-title {
     font-size: 3rem;
 }
 
-img {
+.card-img {
     border-radius: 3vh;
     margin: 2rem auto;
 }
 
-a {
+.card-link {
     color: burlywood;
     font-size: 2rem;
+}
+@media (max-width: 850px) {
+.head {
+    font-size: 2rem;
+}
+.card  {
+    width: 50%;
+  }
 }
