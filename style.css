@@ -8,23 +8,41 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    color:darkslateblue
+    color:darkslateblue;
+    font-size: 10rem;
+    background-color: cornflowerblue;
 }
 
 .head {
 
 }
 
-.card {
+.content-bin {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.card {
+    background-color: darkslategrey;
+    color: antiquewhite;
+    text-align: center;
+    width: 30%;
+    border-radius: 3vh;
+    padding: 1rem;
 }
 
 h2 {
-    
+    font-size: 3rem;
 }
 
-.sample {
+img {
+    border-radius: 3vh;
+    margin: 2rem auto;
+}
+
+a {
+    color: burlywood;
     font-size: 2rem;
-    border: 1px solid aqua;
-    display: flex;
 }
