@@ -34,7 +34,7 @@ body {
     border-radius: 30px;
     padding: 1rem;
     margin: 1.5rem;
-    box-shadow: 10px 10px 10px rgb(54, 66, 66);
+    box-shadow: 10px 10px 4px rgb(54, 66, 66);
     
 }
 
@@ -52,11 +52,22 @@ body {
     color: burlywood;
     font-size: 2rem;
 }
-@media (max-width: 850px) {
+@media (max-width: 900px) {
 .head {
-    font-size: 2rem;
+    font-size: 8rem;
 }
 .card  {
-    width: 50%;
+    width: 45%;
   }
 }
+
+@media (max-width: 600px) {
+    .head {
+        font-size: 7rem;
+    }
+    .card  {
+        width: 85%;
+      }
+    }
+
+@media ()
