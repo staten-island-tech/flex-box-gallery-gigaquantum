@@ -52,7 +52,7 @@ body {
     color: burlywood;
     font-size: 2rem;
 }
-@media (max-width: 900px) {
+@media (max-width: 920px) {
 .head {
     font-size: 8rem;
 }
