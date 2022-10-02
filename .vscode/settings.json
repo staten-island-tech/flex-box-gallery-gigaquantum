@@ -1,0 +1,17 @@
+{
+  "spellright.language": [
+    "en"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "arduino-output",
+    "html"
+  ],
+  "spellright.parserByClass": {
+    "arduino-output": {
+      "parser": "markdown"
+    }
+  }
+}
