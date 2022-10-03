@@ -8,9 +8,9 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
-    color:darkslateblue;
+    color: #ABC292;
     font-size: 10rem;
-    background-color: cornflowerblue;
+    background-color: #485655;
 }
 
 .head {
@@ -27,14 +27,14 @@ body {
 }
 
 .card {
-    background-color: darkslategrey;
-    color: antiquewhite;
+    background-color: #797957;
+    color: #F3E391;
     text-align: center;
     width: 30%;
     border-radius: 30px;
     padding: 1rem;
     margin: 1.5rem;
-    box-shadow: 10px 10px 4px rgb(54, 66, 66);
+    box-shadow: 1rem 1rem 4px #616138;
     
 }
 
@@ -49,7 +49,7 @@ body {
 }
 
 .card-link {
-    color: burlywood;
+    color: #CFB879;
     font-size: 2rem;
 }
 @media (max-width: 920px) {
@@ -69,5 +69,3 @@ body {
         width: 85%;
       }
     }
-
-@media ()
