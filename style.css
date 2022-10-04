@@ -34,9 +34,10 @@ body {
     height: 500px;
     border-radius: 30px;
     box-shadow: 1rem 1rem 4px #616138;
-    flex-direction: row;
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    align-content: space-around;
+    justify-content: space-around;
     margin: 3% auto;
 }
 
