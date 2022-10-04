@@ -22,8 +22,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
     flex-grow: 1rem;
+    width: 100vw;
 }
 
 .card {
@@ -31,11 +31,13 @@ body {
     color: #F3E391;
     text-align: center;
     width: 30%;
+    height: 500px;
     border-radius: 30px;
-    padding: 1rem;
-    margin: 1.5rem;
     box-shadow: 1rem 1rem 4px #616138;
-    
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin: 3% auto;
 }
 
 .card-title {
@@ -43,9 +45,7 @@ body {
 }
 
 .card-img {
-    border-radius: 30px;
-    margin: 1rem;
-    width: 90%;
+    width: 100%;
 }
 
 .card-link {
