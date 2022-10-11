@@ -1,4 +1,6 @@
-*, body, html {
+*,
+body,
+html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -13,9 +15,25 @@ body {
     background-color: #485655;
 }
 
+.head-bin {
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1rem;
+    width: 100%;
+}
+
 .head {
     text-align: center;
     font-size: 8vw;
+    background-color: #797957;
+    box-shadow: 1rem 1rem 4px #616138;
+    margin: 2% 1%;
+    border-radius: 30px;
+    width: fit-content;
+    padding: 1.5%;
+    display: flex;
+    justify-content: space-around;
+    transform: all 5s;
 }
 
 .content-bin {
@@ -57,36 +75,39 @@ body {
 }
 
 @media screen and (max-width: 920px) {
-.head {
-    font-size: 12.5vw;
-}
+    .head {
+        font-size: 12.5vw;
+    }
 
-.card  {
-    width: 45%;
-    height: 60vw;
-  }
-  .card-title {
-    font-size: 4.5vw;
-}
+    .card {
+        width: 45%;
+        height: 60vw;
+    }
 
-.card-link {
-    font-size: 4vw;
-}
+    .card-title {
+        font-size: 4.5vw;
+    }
+
+    .card-link {
+        font-size: 4vw;
+    }
 }
 
 @media screen and (max-width: 620px) {
     .head {
         font-size: 15vw;
     }
-    .card  {
+
+    .card {
         width: 80%;
         height: 90vw;
         margin: 4% auto;
-      }
-      .card-title {
+    }
+
+    .card-title {
         font-size: 6.5vw;
     }
-    
+
     .card-link {
         font-size: 5vw;
     }
@@ -94,3 +115,19 @@ body {
 
 .card:hover {
     transform: scale(1.15);
+}
+
+.head:hover {
+    transform: rotate(15deg, -40deg);
+    transform: rotate(-15deg);
+    transform: rotate(15deg);
+    transform: rotate(-15deg);
+    transform: rotate(10deg);
+    transform: rotate(-10deg);
+    transform: rotate(10deg);
+    transform: rotate(-10deg);
+    transform: rotate(5deg);
+    transform: rotate(-5deg);
+    transform: rotate(5deg);
+    transform: rotate(-5deg);
+}
