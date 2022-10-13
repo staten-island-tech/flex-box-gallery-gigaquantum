@@ -33,7 +33,9 @@ body {
     padding: 1.5%;
     display: flex;
     justify-content: space-around;
-    transform: all 5s;
+    animation-name: shake;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 .content-bin {
@@ -114,20 +116,15 @@ body {
 }
 
 .card:hover {
-    transform: scale(1.15);
+    transform: scale(1.2);
 }
 
-.head:hover {
-    transform: rotate(15deg, -40deg);
-    transform: rotate(-15deg);
-    transform: rotate(15deg);
-    transform: rotate(-15deg);
-    transform: rotate(10deg);
-    transform: rotate(-10deg);
-    transform: rotate(10deg);
-    transform: rotate(-10deg);
-    transform: rotate(5deg);
-    transform: rotate(-5deg);
-    transform: rotate(5deg);
-    transform: rotate(-5deg);
+.card:not(card) {
+    opacity: 0.5;
+}
+
+@keyframes shake {
+    0% {transform: rotate(2.5deg);}
+    50% {transform:rotate(-5deg);}
+    100% {transform: rotate(2.5deg);}
 }
