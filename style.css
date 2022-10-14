@@ -34,7 +34,7 @@ body {
     display: flex;
     justify-content: space-around;
     animation-name: shake;
-    animation-duration: 0.5s;
+    animation-duration: 0.75s;
     animation-iteration-count: infinite;
 }
 
@@ -69,11 +69,20 @@ body {
 
 .card-img {
     width: 100%;
+    z-index: 0;
 }
 
 .card-link {
     color: #CFB879;
     font-size: 2.25vw;
+}
+
+.rainbow-tint {
+    background-color: rgb(255, 255, 255);
+    opacity: 0;
+    z-index: 1;
+    width: calc;
+    height:;
 }
 
 @media screen and (max-width: 920px) {
@@ -115,16 +124,37 @@ body {
     }
 }
 
-.card:hover {
-    transform: scale(1.2);
+.card-link:hover {
+    color:#ac9967;
 }
 
-.card:not(card) {
-    opacity: 0.5;
+.content-bin:hover .card:not(:hover) {
+    opacity: 0.7;
+    transform: scale(0.9);
+}
+
+.card:hover {
+    transform: scale(1.15);
+}
+
+.rainbow-tint:hover {
+    animation-name: rainbow-flow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes shake {
     0% {transform: rotate(2.5deg);}
-    50% {transform:rotate(-5deg);}
+    50% {transform: rotate(-5deg);}
     100% {transform: rotate(2.5deg);}
+}
+
+@keyframes rainbow-flow {
+    0% {opacity 0.1; background-color: #FF0000}
+    16.6666666667% {opacity: 0.1; background-color: #FF7F00}
+    33.3333333333% {opacity: 0.1; background-color: #FFFF00}
+    50% {opacity: 0.1; background-color: #00FF00}
+    66.6666666667% {opacity: 0.1; background-color: #0000FF}
+    83.3333333333% {opacity: 0.1; background-color: #4B0082}
+    100% {opacity: 0.1; background-color: #9400D3}
 }
