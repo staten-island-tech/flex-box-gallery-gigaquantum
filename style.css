@@ -51,7 +51,7 @@ body {
     color: #F3E391;
     text-align: center;
     width: 30%;
-    height: 37vw;
+    height: 40vw;
     border-radius: 30px;
     box-shadow: 1rem 1rem 4px #616138;
     display: flex;
@@ -72,17 +72,24 @@ body {
     z-index: 0;
 }
 
+.img-bin {
+    width: 100%;
+    height: fit-content;
+}
+
 .card-link {
+    border-style: solid;
+    border-color: #Cfb879;
+    border-radius: 10px;
     color: #CFB879;
     font-size: 2.25vw;
+    padding: 1.5%;
 }
 
 .rainbow-tint {
     background-color: rgb(255, 255, 255);
     opacity: 0;
     z-index: 1;
-    width: calc;
-    height:;
 }
 
 @media screen and (max-width: 920px) {
@@ -125,7 +132,8 @@ body {
 }
 
 .card-link:hover {
-    color:#ac9967;
+    color:#bb983f;
+    border-color: #bb983f;
 }
 
 .content-bin:hover .card:not(:hover) {
@@ -137,9 +145,9 @@ body {
     transform: scale(1.15);
 }
 
-.rainbow-tint:hover {
-    animation-name: rainbow-flow;
-    animation-duration: 5s;
+.head:hover {
+    animation-name: rainbow-flow, rainbow-shadow, shake;
+    animation-duration: 2s, 2s, 0.75s;
     animation-iteration-count: infinite;
 }
 
@@ -150,11 +158,21 @@ body {
 }
 
 @keyframes rainbow-flow {
-    0% {opacity 0.1; background-color: #FF0000}
-    16.6666666667% {opacity: 0.1; background-color: #FF7F00}
-    33.3333333333% {opacity: 0.1; background-color: #FFFF00}
-    50% {opacity: 0.1; background-color: #00FF00}
-    66.6666666667% {opacity: 0.1; background-color: #0000FF}
-    83.3333333333% {opacity: 0.1; background-color: #4B0082}
-    100% {opacity: 0.1; background-color: #9400D3}
+    0% {background-color: #ff8989}
+    16.6666666667% {background-color: #ffbf7f}
+    33.3333333333% {background-color: #ffffa2}
+    50% {background-color: #9eff9e}
+    66.6666666667% {background-color: #9191ff}
+    83.3333333333% {background-color: #c169ff}
+    100% {background-color: #d77aff}
+}
+
+@keyframes rainbow-shadow {
+    0% {box-shadow: 1rem 1rem 4px #c46868}
+    16.6666666667% {box-shadow: 1rem 1rem 4px #c99664}
+    33.3333333333% {box-shadow: 1rem 1rem 4px #cece82}
+    50% {box-shadow: 1rem 1rem 4px #7bcc7b}
+    66.6666666667% {box-shadow: 1rem 1rem 4px #7070c5}
+    83.3333333333% {box-shadow: 1rem 1rem 4px #8d4dbb}
+    100% {box-shadow: 1rem 1rem 4px #aa60ca}
 }
