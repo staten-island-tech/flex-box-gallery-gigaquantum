@@ -80,7 +80,7 @@ body {
 .card-link {
     border-style: solid;
     border-color: #Cfb879;
-    border-radius: 10px;
+    border-radius: 1vw;
     color: #CFB879;
     font-size: 2.25vw;
     padding: 1.5%;
@@ -141,14 +141,46 @@ body {
     transform: scale(0.9);
 }
 
+
+/* Fix SLide Transition */
+.card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #764abc;
+    transition: all 1s;
+    z-index: -1;
+    transform: translateX(-100%);
+    overflow: hidden;
+
+  }
+
+.card:hover::before {
+        transform: translateX(0);
+      
+}
+
 .card:hover {
     transform: scale(1.15);
+    outline-color: #7bcc7b;
+    outline-style: solid;
+    outline-width: 0.75vw;
+    outline-offset: 1.25vw;
 }
 
 .head:hover {
     animation-name: rainbow-flow, rainbow-shadow, shake;
     animation-duration: 2s, 2s, 0.75s;
     animation-iteration-count: infinite;
+    transition: ;
+}
+
+@keyframes background-fade {
+    from {background-color: #797957;}
+    to {background-color: #5c5c1e;}
 }
 
 @keyframes shake {
