@@ -50,7 +50,7 @@ body {
     background-color: #797957;
     color: #F3E391;
     text-align: center;
-    width: 30%;
+    width: 28%;
     height: 40vw;
     border-radius: 30px;
     box-shadow: 1rem 1rem 4px #616138;
@@ -60,6 +60,7 @@ body {
     justify-content: space-around;
     margin: 2% auto;
     transition: all 0.3s;
+    overflow: hidden;
 }
 
 .card-title {
@@ -72,11 +73,6 @@ body {
     z-index: 0;
 }
 
-.img-bin {
-    width: 100%;
-    height: fit-content;
-}
-
 .card-link {
     border-style: solid;
     border-color: #Cfb879;
@@ -84,12 +80,6 @@ body {
     color: #CFB879;
     font-size: 2.25vw;
     padding: 1.5%;
-}
-
-.rainbow-tint {
-    background-color: rgb(255, 255, 255);
-    opacity: 0;
-    z-index: 1;
 }
 
 @media screen and (max-width: 920px) {
@@ -136,11 +126,9 @@ body {
     border-color: #bb983f;
 }
 
-.content-bin:hover .card:not(:hover) {
-    opacity: 0.7;
+.content-bin:hover .card:not(:hover){
     transform: scale(0.9);
 }
-
 
 /* Fix SLide Transition */
 .card:before {
@@ -150,22 +138,19 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #764abc;
+    background-color: #79836f;
     transition: all 1s;
     z-index: -1;
     transform: translateX(-100%);
-    overflow: hidden;
-
-  }
+}
 
 .card:hover::before {
-        transform: translateX(0);
-      
+    transform: translateX(0);
 }
 
 .card:hover {
-    transform: scale(1.15);
-    outline-color: #7bcc7b;
+    transform: scale(1.1);
+    outline-color: #ABC292;
     outline-style: solid;
     outline-width: 0.75vw;
     outline-offset: 1.25vw;
@@ -175,7 +160,6 @@ body {
     animation-name: rainbow-flow, rainbow-shadow, shake;
     animation-duration: 2s, 2s, 0.75s;
     animation-iteration-count: infinite;
-    transition: ;
 }
 
 @keyframes background-fade {
