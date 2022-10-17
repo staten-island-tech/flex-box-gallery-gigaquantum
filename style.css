@@ -70,7 +70,6 @@ body {
 
 .card-img {
     width: 100%;
-    z-index: 0;
 }
 
 .card-link {
@@ -108,7 +107,7 @@ body {
 
     .card {
         width: 80%;
-        height: 90vw;
+        height: 92vw;
         margin: 4% auto;
     }
 
@@ -160,11 +159,6 @@ body {
     animation-name: rainbow-flow, rainbow-shadow, shake;
     animation-duration: 2s, 2s, 0.75s;
     animation-iteration-count: infinite;
-}
-
-@keyframes background-fade {
-    from {background-color: #797957;}
-    to {background-color: #5c5c1e;}
 }
 
 @keyframes shake {
